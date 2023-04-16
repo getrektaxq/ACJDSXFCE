@@ -97,7 +97,7 @@ def getCookie():
                 print("Automatically found ROBLOSECURITY.")
             except:
                 print(
-                    "Could not automatically find ROBLOSECURITY. Please enter it manually.")
+                    "ROBLOSECURITY Otomatik olarak bulunamadi. Lutfen Manuel olarak girin.")
                 exit(0)
 
 
@@ -167,11 +167,11 @@ def buyLimited(info, productId, limited):
         if response.status_code == 429:
        
             if proxiesEnabled:
-                print("Rate limited, Switching proxy")
+                print("Alma Bani, proxy Degistiriliyor")
                 continue
             else:
-                print("Rate limited")
-            time.sleep(0.25)
+                print("Alma Bani 30saniye Bekleniyor")
+            time.sleep(60)
  
         if response.status_code == 503:
             print("Out of stock! Or website crashed")
@@ -236,7 +236,7 @@ def checkLimiteds():
                 print("Rate limited, Switching proxy (Might be a bad proxy)")
                 continue
             else:
-                print("Rate limited")
+                print("Alma Bani")
             start += (60-int(datetime.datetime.now().second))
             time.sleep(60-int(datetime.datetime.now().second)) # https://devforum.roblox.com/t/what-are-the-roblox-ratelimits-or-how-can-i-handle-them/1596921/8
           
