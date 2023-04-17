@@ -170,7 +170,7 @@ def buyLimited(info, productId, limited):
                 print("Alma Bani, proxy Degistiriliyor")
                 continue
             else:
-                print("Alma Bani 60saniye Bekleniyor")
+                print("Alma Bani Bekleniyor")
             time.sleep(60)
  
         if response.status_code == 503:
