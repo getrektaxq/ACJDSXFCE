@@ -10,7 +10,7 @@ import queue
 os.system("cls")
 
 print("https://discord.gg/7KywcjbMmu")
-print("Preminum Almayı Unutmayın")
+print("Preminumsuz Hesap")
 
 
 limiteds = []
@@ -209,8 +209,7 @@ def buyLimited(info, productId, limited):
 
         if response["purchased"]:
             print("---SATIN ALINDI--- " + info["name"])
-            time.sleep(7)
-
+time.sleep(10)
 
 
 def checkLimiteds():
