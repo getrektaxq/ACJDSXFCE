@@ -170,8 +170,8 @@ def buyLimited(info, productId, limited):
                 print("Alma Bani, proxy Degistiriliyor")
                 continue
             else:
-                print("Alma Bani 60saniye Bekleniyor")
-            time.sleep(60)
+                print("Alma Bani 10saniye Bekleniyor")
+            time.sleep(10)
  
         if response.status_code == 503:
             print("Out of stock! Or website crashed")
