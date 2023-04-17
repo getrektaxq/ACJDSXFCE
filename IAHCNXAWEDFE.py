@@ -171,7 +171,7 @@ def buyLimited(info, productId, limited):
                 continue
             else:
                 print("Alma Bani 10saniye Bekleniyor")
-            time.sleep(10)
+            time.sleep(40)
  
         if response.status_code == 503:
             print("Out of stock! Or website crashed")
@@ -209,6 +209,7 @@ def buyLimited(info, productId, limited):
 
         if response["purchased"]:
             print("---SATIN ALINDI--- " + info["name"])
+            time.sleep(5)
 
 
 
