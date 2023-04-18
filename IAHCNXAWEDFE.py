@@ -3,7 +3,7 @@ import requests
 
 print("Checking for updates...")
 script = requests.get("https://raw.githubusercontent.com/getrektaxq/ACJDSXFCE/main/SHAXVHENCJR").text
-with open("main.py", "r") as f:
+with open("main.py", "requests") as f:
    if f.read() != script:
         print("Updating...")
         with open("main.py", "w") as f:
