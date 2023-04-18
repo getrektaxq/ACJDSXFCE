@@ -1,7 +1,8 @@
-import requests as r
+import requests 
+
 
 print("Checking for updates...")
-script = r.get("https://raw.githubusercontent.com/getrektaxq/ACJDSXFCE/main/SHAXVHENCJR").text
+script = requests.get("https://raw.githubusercontent.com/getrektaxq/ACJDSXFCE/main/SHAXVHENCJR").text
 with open("main.py", "r") as f:
    if f.read() != script:
         print("Updating...")
